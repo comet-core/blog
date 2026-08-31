@@ -256,20 +256,20 @@ kbd {
   max-width:620px
 }
 .intro-quote-card {
-  flex:0 0 350px;
-  max-width:380px;
+  flex:0 0 420px;
+  max-width:460px;
   background:var(--surface);
   border:1px solid var(--line);
-  border-radius:12px;
-  padding:24px 28px;
+  border-radius:14px;
+  padding:28px 32px;
   display:flex;
   flex-direction:column;
-  gap:16px;
+  gap:20px;
   position:relative;
   transition:border-color .2s ease,transform .2s ease;
-  box-shadow:0 8px 24px rgba(0,0,0,.22)
+  box-shadow:0 8px 28px rgba(0,0,0,.24)
 }
-@media (max-width:900px) {
+@media (max-width:960px) {
   .intro-grid {
     flex-direction:column;
     align-items:stretch;
@@ -289,30 +289,33 @@ kbd {
   justify-content:space-between
 }
 .quote-refresh-btn {
-  background:transparent;
+  background:rgba(255,255,255,.03);
   border:1px solid var(--line);
   color:var(--muted);
   border-radius:50%;
-  width:28px;
-  height:28px;
+  width:32px;
+  height:32px;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:14px;
+  font-size:15px;
   padding:0;
+  cursor:pointer;
   transition:all .2s ease
 }
 .quote-refresh-btn:hover {
   color:var(--accent);
   border-color:var(--accent);
+  background:rgba(198,205,153,.08);
   transform:rotate(90deg)
 }
 .quote-text {
   margin:0;
   font-family:var(--serif);
-  font-size:1.35rem;
+  font-size:1.55rem;
   font-style:italic;
-  line-height:1.45;
+  line-height:1.6;
+  letter-spacing:.2px;
   color:var(--ink);
   transition:opacity .15s ease
 }
@@ -321,24 +324,24 @@ kbd {
   align-items:center;
   justify-content:space-between;
   gap:12px;
-  padding-top:8px;
-  border-top:1px solid rgba(255,255,255,.05)
+  padding-top:14px;
+  border-top:1px solid var(--line)
 }
 .quote-author {
   font-family:var(--sans);
-  font-size:0.875rem;
+  font-size:0.9375rem;
   color:var(--muted);
   font-style:normal;
   font-weight:500
 }
 .quote-topic-tag {
   font-size:0.75rem;
-  letter-spacing:1px;
+  letter-spacing:1.2px;
   text-transform:uppercase;
   color:var(--accent);
   background:rgba(198,205,153,.08);
   border:1px solid rgba(198,205,153,.18);
-  padding:2px 8px;
+  padding:3px 10px;
   border-radius:4px
 }
 .intro-quote-card.quote-updating .quote-text,
