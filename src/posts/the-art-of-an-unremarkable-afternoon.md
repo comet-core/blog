@@ -3,7 +3,6 @@ title: The art of an unremarkable afternoon
 description: "Nothing much happened today. The light moved across the room, the tea went cold, and for once, that felt like enough."
 date: 2026-08-30
 category: Everyday
-featured: true
 sample: true
 image: /assets/images/quiet-afternoon.jpg
 imageAlt: A cup of coffee and an open notebook beside a window

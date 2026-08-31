@@ -22,7 +22,7 @@ function resolveTarget(value, from) {
 
 for (const file of files.filter(file => extname(file) === '.html')) {
   const html = readFileSync(file, 'utf8');
-  const name = relative(output, file);
+  const name = relative(output, file).replace(/\\/g, '/');
   if (!/<h1[\s>]/.test(html)) errors.push(`${name}: missing h1`);
   if (!/<title>[^<]+<\/title>/.test(html)) errors.push(`${name}: missing title`);
   if (!/<meta name="description" content="[^"]+"/.test(html)) errors.push(`${name}: missing description`);
@@ -56,7 +56,7 @@ for (const match of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) {
 
 assert(existsSync(join(output, '.nojekyll')), 'Missing .nojekyll');
 assert(existsSync(join(output, '404.html')), 'Missing custom 404');
-const posts = files.filter(file => relative(output, file).startsWith('journal/') && extname(file) === '.html');
+const posts = files.filter(file => relative(output, file).replace(/\\/g, '/').startsWith('journal/') && extname(file) === '.html');
 const feed = readFileSync(join(output, 'feed.xml'), 'utf8');
 assert.equal((feed.match(/<entry>/g) || []).length, posts.length, 'Feed must contain every published post');
 assert(feed.trimStart().startsWith('<?xml'), 'Feed must begin with its XML declaration');
