@@ -38,7 +38,7 @@ You can use **bold**, *italics*, lists, quotes, and links.
 
 4. Commit the file to your default branch. GitHub publishes the update automatically.
 
-Use `Everyday`, `Writings`, or `Fragments` as the category. Any length is fine. You can write in any language; a visitor's system font will be used for characters outside the bundled Latin fonts. Dates control sorting. Dates are not a scheduler: a future-dated entry with `draft: false` is still published.
+Use `Everyday`, `Writings`, `Fragments`, `Space`, or `Automotive` as the category. Any length is fine. You can write in any language; a visitor's system font will be used for characters outside the bundled Latin fonts. Dates control sorting. Dates are not a scheduler: a future-dated entry with `draft: false` is still published.
 
 Set `draft: true` to exclude a post from the site, search, and RSS. **Drafts are still readable in a public GitHub repository**. Keep private writing outside the repository. A clean production build removes previously published files when you delete a post or make it a draft.
 

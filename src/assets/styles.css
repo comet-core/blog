@@ -362,6 +362,14 @@ kbd {
   color:#b4bed0;
   border-color:#3b4651
 }
+.category-space {
+  color:#c8b6db;
+  border-color:#4d3b5c
+}
+.category-automotive {
+  color:#e5b88a;
+  border-color:#5c432d
+}
 .meta-dot {
   color:var(--faint);
   margin:0 -4px

@@ -5,13 +5,13 @@ import { fileURLToPath } from 'node:url';
 const args = process.argv.slice(2);
 const title = args[0];
 if (!title || title.startsWith('--')) {
-  console.error('Usage: npm run new -- "Your post title" [--category Everyday|Writings|Fragments]');
+  console.error('Usage: npm run new -- "Your post title" [--category Everyday|Writings|Fragments|Space|Automotive]');
   process.exit(1);
 }
 const optionIndex = args.indexOf('--category');
 const category = optionIndex === -1 ? 'Everyday' : args[optionIndex + 1];
-if (!['Everyday', 'Writings', 'Fragments'].includes(category)) {
-  console.error('Choose a category: Everyday, Writings, or Fragments.');
+if (!['Everyday', 'Writings', 'Fragments', 'Space', 'Automotive'].includes(category)) {
+  console.error('Choose a category: Everyday, Writings, Fragments, Space, or Automotive.');
   process.exit(1);
 }
 const slug = title.normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-|-$/g, '');
