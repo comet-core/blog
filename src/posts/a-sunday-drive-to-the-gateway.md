@@ -47,6 +47,10 @@ There is a noticeable change in pace when you arrive at the waterfront after an 
 
 The Gateway itself was familiar even after all those years away. It is one of those landmarks that has been photographed so many times that it can begin to feel almost abstract until you are standing in front of it again. In person, the scale returns. The stonework, the arches, the water immediately beyond it and the movement around the plaza give the place a presence that photographs never quite reproduce.
 
+![The Gateway of India in Colaba, Mumbai]({{ '/assets/images/gateway_vert.jpg' | url }})
+
+*The Gateway of India standing tall above the promenade — 30 August 2026.*
+
 Across from it stood the Taj Mahal Palace Hotel, its red dome rising above the surrounding buildings.
 
 ![The Taj Mahal Palace Hotel in South Mumbai]({{ '/assets/images/taj_vert.jpg' | url }})
