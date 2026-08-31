@@ -4,7 +4,9 @@
   "private": true,
   "description": "A personal journal. Made for the everyday.",
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "eleventy --serve",
     "build": "node scripts/clean.mjs && eleventy",
@@ -12,5 +14,8 @@
     "check": "node scripts/check.mjs",
     "test": "npm run build && npm run check"
   },
-  "devDependencies": { "@11ty/eleventy": "3.1.6" }
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "postcss": "8.5.26"
+  }
 }

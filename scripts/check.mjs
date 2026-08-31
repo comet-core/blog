@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, existsSync, statSync } from 'node:fs';
 import { resolve, relative, join, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
+import postcss from 'postcss';
 
 const output = fileURLToPath(new URL('../_site/', import.meta.url));
 const prefix = `/${(process.env.PATH_PREFIX || '').replace(/^\/+|\/+$/g, '')}/`.replace('//', '/');
@@ -44,6 +45,9 @@ for (const file of files.filter(file => extname(file) === '.html')) {
 
 const cssPath = join(output, 'assets/styles.css');
 const css = readFileSync(cssPath, 'utf8');
+// Fail on malformed CSS as well as missing assets. A copied stylesheet can
+// otherwise pass the static build while silently dropping entire page layouts.
+postcss.parse(css, { from: cssPath, map: false });
 for (const match of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) {
   if (/^(data:|https?:)/.test(match[1])) continue;
   const target = resolveTarget(match[1], cssPath);
@@ -61,4 +65,4 @@ for (const file of ['feed.xml', 'sitemap.xml']) {
   if (process.env.SITE_URL && content.includes('http://localhost')) errors.push(`${file}: localhost URL in production output`);
 }
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
-console.log(`Verified ${files.filter(file => extname(file) === '.html').length} HTML pages, ${posts.length} posts, local links and assets, metadata, RSS, and GitHub Pages paths (${prefix}).`);
+console.log(`Verified ${files.filter(file => extname(file) === '.html').length} HTML pages, ${posts.length} posts, CSS syntax, local links and assets, metadata, RSS, and GitHub Pages paths (${prefix}).`);

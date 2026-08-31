@@ -31,7 +31,7 @@
   --surface:#20231e;
   --ink:#e6e2d6;
   --muted:#aaa99c;
-  --faint:#818575;
+  --faint:#9a9e8d;
   --line:#383c32;
   --accent:#c6cd99;
   --serif:'Instrument Serif',Georgia,serif;
@@ -50,7 +50,7 @@ body {
   background:var(--bg);
   color:var(--ink);
   font-family:var(--sans);
-  font-size:14px;
+  font-size:1.125rem;
   line-height:1.7;
   -webkit-font-smoothing:antialiased
 }
@@ -140,7 +140,7 @@ button:disabled {
   align-items:center;
   gap:33px;
   margin-left:auto;
-  font-size:13px;
+  font-size:1.0625rem;
   color:var(--muted);
   height:100%
 }
@@ -168,13 +168,13 @@ button:disabled {
   align-items:center;
   gap:10px;
   color:var(--muted);
-  font-size:12px;
+  font-size:1rem;
   border-left:1px solid var(--line);
   padding-left:30px
 }
 .search-icon {
-  width:13px;
-  height:13px;
+  width:16px;
+  height:16px;
   border:1.4px solid currentColor;
   border-radius:50%;
   display:inline-block;
@@ -192,7 +192,7 @@ button:disabled {
   transform:rotate(-45deg)
 }
 kbd {
-  font:10px var(--sans);
+  font:0.875rem var(--sans);
   border:1px solid var(--line);
   padding:2px 6px;
   border-radius:3px;
@@ -202,7 +202,7 @@ kbd {
   padding-top:57px
 }
 .eyebrow,.small-label {
-  font-size:10px;
+  font-size:0.875rem;
   letter-spacing:1.8px;
   font-weight:500;
   line-height:1.6;
@@ -212,7 +212,7 @@ kbd {
   display:flex;
   align-items:center;
   gap:10px;
-  font-size:10px;
+  font-size:0.875rem;
   letter-spacing:2px
 }
 .status-dot {
@@ -237,9 +237,9 @@ kbd {
 }
 .intro-description {
   color:var(--muted);
-  max-width:385px;
-  font-size:14px;
-  line-height:1.9;
+  max-width:470px;
+  font-size:1.25rem;
+  line-height:1.8;
   margin-top:25px
 }
 .intro {
@@ -274,9 +274,10 @@ kbd {
   justify-content:space-between;
   border-bottom:1px solid var(--line);
   padding-bottom:19px;
-  font-size:9px;
+  font-size:0.875rem;
   letter-spacing:1.5px;
-  color:var(--faint)
+  color:var(--faint);
+  gap:12px 24px
 }
 .tiny-star {
   color:var(--accent);
@@ -294,15 +295,17 @@ kbd {
   display:flex;
   align-items:center;
   justify-content:space-between;
-  margin-bottom:22px
+  margin-bottom:22px;
+  flex-wrap:wrap;
+  gap:8px 20px
 }
 .section-heading h2 {
-  font-size:25px;
+  font-size:32px;
   font-family:var(--serif);
   font-weight:400
 }
 .section-heading .small-label {
-  font-size:9px;
+  font-size:0.875rem;
   letter-spacing:1.4px
 }
 .featured-image-link {
@@ -326,7 +329,7 @@ kbd {
   position:absolute;
   bottom:17px;
   left:20px;
-  font-size:8px;
+  font-size:0.875rem;
   letter-spacing:2px;
   color:#efeadd;
   text-shadow:0 1px 6px #000
@@ -336,7 +339,7 @@ kbd {
   align-items:center;
   gap:10px;
   color:var(--muted);
-  font-size:10px;
+  font-size:0.875rem;
   letter-spacing:.1px;
   flex-wrap:wrap
 }
@@ -344,7 +347,7 @@ kbd {
   margin-top:24px
 }
 .category {
-  font-size:9px;
+  font-size:0.875rem;
   padding:3px 9px;
   border:1px solid #414836;
   border-radius:3px;
@@ -365,7 +368,7 @@ kbd {
 }
 .featured-title {
   font-family:var(--serif);
-  font-size:39px;
+  font-size:44px;
   line-height:1.15;
   font-weight:400;
   letter-spacing:-.35px;
@@ -375,11 +378,11 @@ kbd {
   color:var(--muted);
   line-height:1.85;
   margin-top:12px;
-  font-size:13px;
+  font-size:1.125rem;
   max-width:570px
 }
 .text-link {
-  font-size:11px;
+  font-size:1rem;
   display:inline-flex;
   align-items:center;
   gap:14px;
@@ -401,7 +404,7 @@ kbd {
   padding-top:10px
 }
 .about-card>.small-label {
-  font-size:8px;
+  font-size:0.875rem;
   letter-spacing:1.5px
 }
 .author-mark {
@@ -429,17 +432,17 @@ kbd {
 .about-card h2 {
   font-family:var(--serif);
   font-weight:400;
-  font-size:27px;
+  font-size:32px;
   margin-top:20px
 }
 .about-card p {
-  font-size:12px;
+  font-size:1.125rem;
   color:var(--muted);
   line-height:1.85;
   margin-top:11px
 }
 .about-card .text-link {
-  font-size:10px;
+  font-size:0.875rem;
   margin-top:18px;
   gap:11px
 }
@@ -449,7 +452,7 @@ kbd {
   padding-top:24px
 }
 .side-section h2 {
-  font-size:9px;
+  font-size:0.875rem;
   letter-spacing:1.5px
 }
 .topic-list {
@@ -459,10 +462,10 @@ kbd {
   display:flex;
   justify-content:space-between;
   padding:8px 0;
-  font-size:12px
+  font-size:1.0625rem
 }
 .topic-count {
-  font-size:10px;
+  font-size:0.875rem;
   color:var(--faint)
 }
 .topic-count>span {
@@ -479,12 +482,12 @@ kbd {
 }
 .note-card h2 {
   color:#a9b08b;
-  font-size:8px;
+  font-size:0.875rem;
   letter-spacing:1.5px
 }
 .note-card p {
   font-family:var(--serif);
-  font-size:23px;
+  font-size:28px;
   line-height:1.3;
   margin-top:18px;
   color:#d2d5bb;
@@ -507,7 +510,7 @@ kbd {
   transform:rotate(7deg)
 }
 .sidebar-foot {
-  font-size:9px;
+  font-size:0.875rem;
   color:var(--faint);
   margin-top:27px;
   display:flex;
@@ -524,7 +527,7 @@ kbd {
 }
 .entry-row {
   border-top:1px solid var(--line);
-  padding:26px 0;
+  padding:30px 0;
   display:flex;
   gap:24px;
   align-items:center
@@ -535,13 +538,13 @@ kbd {
 .entry-row h3 {
   font-family:var(--serif);
   font-weight:400;
-  font-size:27px;
+  font-size:32px;
   line-height:1.3;
   margin-top:11px
 }
 .entry-row p {
   color:var(--muted);
-  font-size:12px;
+  font-size:1.125rem;
   margin-top:6px;
   line-height:1.8
 }
@@ -559,20 +562,21 @@ kbd {
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
   padding:22px 0;
-  font-size:11px
+  font-size:1rem;
+  flex-wrap:wrap
 }
 .archive-link>span:not(.archive-count) {
   color:var(--accent);
   font-size:17px
 }
 .archive-count {
-  font-size:8px;
+  font-size:0.875rem;
   letter-spacing:1.5px;
   color:var(--faint);
   margin-left:auto
 }
 .example-notice {
-  font-size:10px;
+  font-size:0.875rem;
   color:var(--faint);
   margin:36px 0 0;
   max-width:630px
@@ -584,24 +588,27 @@ kbd {
   display:flex;
   justify-content:space-between;
   gap:20px;
-  align-items:center
+  align-items:center;
+  flex-wrap:wrap
 }
 .footer-brand {
   font-family:var(--serif);
   font-size:23px
 }
 .footer-note {
-  font-size:10px;
+  font-size:0.875rem;
   color:var(--faint);
   display:block;
   margin-top:3px
 }
 .footer-links {
-  font-size:10px;
+  font-size:0.875rem;
   color:var(--muted);
   display:flex;
   gap:24px;
-  align-items:center
+  align-items:center;
+  flex-wrap:wrap;
+  row-gap:12px
 }
 .footer-links>span {
   color:var(--faint)
@@ -653,7 +660,7 @@ kbd {
     height:255px
   }
   .featured-title {
-    font-size:34px
+    font-size:44px
   }
   .main-nav {
     gap:22px
@@ -671,7 +678,7 @@ kbd {
     right:45px
   }
   .section-heading .small-label {
-    font-size:8px
+    font-size:0.875rem
   }
 }
 @media(max-width:760px) {
@@ -691,7 +698,7 @@ kbd {
   }
   .main-nav {
     gap:19px;
-    font-size:12px
+    font-size:1.0625rem
   }
   .main-nav [aria-current=page]:after {
     bottom:15px
@@ -716,8 +723,8 @@ kbd {
     font-size:24px
   }
   .intro-description {
-    max-width:345px;
-    font-size:13px
+    max-width:min(100%, 470px);
+    font-size:1.125rem
   }
   .journal-layout {
     grid-template-columns:minmax(0,1fr);
@@ -759,14 +766,14 @@ kbd {
     display:none
   }
   .intro-bottom {
-    font-size:8px;
+    font-size:0.875rem;
     letter-spacing:1px
   }
   .intro-bottom>span:first-child {
     max-width:280px
   }
   .section-heading .small-label {
-    font-size:9px
+    font-size:0.875rem
   }
 }
 @media(max-width:480px) {
@@ -803,57 +810,57 @@ kbd {
     letter-spacing:-1.6px
   }
   .intro .eyebrow {
-    font-size:8px;
+    font-size:0.875rem;
     letter-spacing:1.5px
   }
   .intro-aside {
     display:none
   }
   .intro-description {
-    font-size:13px;
-    max-width:290px
+    font-size:1.125rem;
+    max-width:min(100%, 470px)
   }
   .intro-bottom {
     margin-top:33px;
     gap:20px;
-    font-size:7px
+    font-size:0.875rem
   }
   .intro-bottom>span:last-child {
     white-space:nowrap
   }
   .tiny-star {
     margin-left:6px;
-    font-size:13px
+    font-size:1rem
   }
   .featured-image {
     height:230px
   }
   .featured-title {
-    font-size:34px
+    font-size:44px
   }
   .section-heading .small-label {
-    font-size:8px;
+    font-size:0.875rem;
     letter-spacing:1px
   }
   .entry-meta {
-    font-size:9px;
+    font-size:0.875rem;
     gap:8px
   }
   .entry-row {
     gap:8px
   }
   .entry-row h3 {
-    font-size:27px
+    font-size:32px
   }
   .entry-arrow {
     padding:7px
   }
   .archive-count {
-    font-size:7px;
+    font-size:0.875rem;
     letter-spacing:1px
   }
   .archive-link {
-    font-size:10px;
+    font-size:0.875rem;
     gap:9px
   }
   .sidebar {
@@ -861,40 +868,40 @@ kbd {
     grid-template-columns:1fr 1fr
   }
   .about-card h2 {
-    font-size:25px
+    font-size:32px
   }
   .about-card p {
-    font-size:11px
+    font-size:1.125rem
   }
   .about-card .text-link {
-    font-size:9px;
+    font-size:0.875rem;
     gap:4px
   }
   .note-card {
     padding:22px 15px 12px
   }
   .note-card p {
-    font-size:21px
+    font-size:28px
   }
   .sidebar-foot {
-    font-size:8px;
+    font-size:0.875rem;
     grid-column:1/-1
   }
   .footer-links {
-    font-size:9px;
+    font-size:0.875rem;
     gap:13px
   }
   .footer-brand {
     font-size:21px
   }
   .footer-note {
-    font-size:8px
+    font-size:0.875rem
   }
   .site-footer {
     gap:12px
   }
   .example-notice {
-    font-size:9px
+    font-size:0.875rem
   }
 }
 @media(prefers-reduced-motion:reduce) {
@@ -925,12 +932,12 @@ kbd {
   object-position:center 72%
 }
 .post-page {
-  max-width:730px;
+  max-width:760px;
   margin:0 auto;
   padding-top:35px
 }
 .back-link {
-  font-size:11px;
+  font-size:1rem;
   color:var(--muted)
 }
 .post-header {
@@ -946,19 +953,19 @@ kbd {
   text-wrap:balance
 }
 .post-deck {
-  font-size:16px;
+  font-size:1.25rem;
   color:var(--muted);
   line-height:1.85;
   margin-top:24px;
   max-width:650px
 }
 .post-byline {
-  font-size:11px;
+  font-size:1rem;
   color:var(--faint);
   margin-top:24px
 }
 .sample-label {
-  font-size:9px;
+  font-size:0.875rem;
   letter-spacing:1px;
   color:var(--muted);
   border-left:2px solid var(--line);
@@ -976,15 +983,15 @@ kbd {
   filter:saturate(.55) brightness(.85)
 }
 .post-figure figcaption {
-  font-size:9px;
+  font-size:0.875rem;
   color:var(--faint);
   text-align:right;
   margin-top:8px
 }
 .prose {
-  font-size:16px;
+  font-size:1.25rem;
   color:#c7c9bc;
-  line-height:1.95;
+  line-height:1.85;
   overflow-wrap:anywhere
 }
 .prose>p,.prose>ul,.prose>ol {
@@ -1038,7 +1045,7 @@ kbd {
   padding:20px;
   background:var(--surface);
   overflow:auto;
-  font-size:13px
+  font-size:1rem
 }
 .prose code {
   background:var(--surface);
@@ -1055,7 +1062,7 @@ kbd {
   border-collapse:collapse;
   display:block;
   overflow-x:auto;
-  font-size:13px
+  font-size:1rem
 }
 .prose th,.prose td {
   text-align:left;
@@ -1081,7 +1088,8 @@ kbd {
   justify-content:space-between;
   align-items:center;
   gap:20px;
-  padding-top:15px
+  padding-top:15px;
+  flex-wrap:wrap
 }
 .post-actions .text-link {
   margin:0
@@ -1090,7 +1098,7 @@ kbd {
   background:transparent;
   border:1px solid var(--line);
   padding:10px 17px;
-  font-size:11px;
+  font-size:1rem;
   border-radius:2px
 }
 .copy-link:hover {
@@ -1111,8 +1119,8 @@ kbd {
 }
 .page-intro>p:not(.eyebrow) {
   color:var(--muted);
-  font-size:14px;
-  max-width:480px;
+  font-size:1.125rem;
+  max-width:580px;
   line-height:1.9
 }
 .archive-tools {
@@ -1122,7 +1130,8 @@ kbd {
   gap:20px;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  padding:18px 0
+  padding:18px 0;
+  flex-wrap:wrap
 }
 .filter-tabs {
   display:flex;
@@ -1132,7 +1141,7 @@ kbd {
 .filter-tabs button {
   border:1px solid transparent;
   background:transparent;
-  font-size:11px;
+  font-size:1rem;
   color:var(--muted);
   padding:8px 12px;
   border-radius:3px;
@@ -1148,7 +1157,7 @@ kbd {
 }
 .filter-tabs button span {
   margin-left:6px;
-  font-size:9px;
+  font-size:0.875rem;
   opacity:.7
 }
 .filter-search {
@@ -1166,7 +1175,7 @@ input[type=search] {
   background:transparent;
   color:var(--ink);
   padding:9px 2px;
-  font-size:12px
+  font-size:1rem
 }
 input::placeholder {
   color:var(--faint)
@@ -1174,50 +1183,63 @@ input::placeholder {
 .filter-search input {
   width:160px;
   border:0
+}
 .filter-status {
-  font-size:10px;
+  font-size:0.875rem;
   color:var(--faint);
   padding:19px 0 15px
+}
 .archive-row {
   gap:35px
+}
 .archive-date {
-  width:105px;
+  width:135px;
   flex-shrink:0;
-  font-size:11px;
+  font-size:1rem;
   color:var(--muted);
   align-self:flex-start;
   padding-top:3px
+}
 .entry-row h2 {
   font-family:var(--serif);
   font-weight:400;
-  font-size:29px;
+  font-size:32px;
   line-height:1.3;
   margin-top:9px
+}
 .archive-entries .entry-row:last-child {
   border-bottom:1px solid var(--line)
+}
 .empty-state {
   text-align:center;
   padding:58px 20px 70px;
   border-top:1px solid var(--line)
+}
 .empty-state h2,.empty-state h3 {
   font:400 36px var(--serif);
   margin:13px 0
+}
 .empty-state p {
   color:var(--muted);
-  font-size:13px
+  font-size:1rem
+}
 .empty-star {
   font-size:38px;
   color:var(--accent)
+}
 .reset-filters {
   background:transparent;
   border:0;
   border-bottom:1px solid var(--faint);
   padding:0 0 5px
+}
 .search-page {
   max-width:840px;
   margin:0 auto
+}
 .search-page .page-intro {
   padding-bottom:20px
+}
 .large-search {
   display:flex;
   gap:20px;
@@ -1225,45 +1247,54 @@ input::placeholder {
   border-bottom:1px solid #60674e;
   padding:15px 0;
   color:var(--accent)
+}
 .large-search input {
   font-size:20px;
   border:0;
   padding:8px 0
+}
 .large-search kbd {
   flex-shrink:0;
   color:var(--faint);
   border:0;
-  font-size:8px;
+  font-size:0.875rem;
   letter-spacing:1px
+}
 .about-page {
   max-width:960px;
   margin:0 auto
+}
 .about-body {
   display:grid;
   grid-template-columns:minmax(0,1fr) 230px;
   gap:85px;
   border-top:1px solid var(--line);
   padding-top:15px
+}
 .about-body .prose h2:first-child {
   margin-top:24px
+}
 .about-aside {
   padding-top:35px
+}
 .author-mark.large {
   width:105px;
   height:105px;
   font-size:67px;
   margin:0 0 33px
+}
 .author-mark.large span {
   font-size:38px;
   right:-6px;
   bottom:-14px
+}
 .about-aside-note {
   font:italic 30px/1.4 var(--serif);
   color:var(--accent);
   margin-bottom:24px
 }
 .about-aside>.small-label {
-  font-size:9px
+  font-size:0.875rem
 }
 .not-found {
   min-height:65vh
@@ -1291,10 +1322,10 @@ input::placeholder {
     font-size:52px
   }
   .post-deck {
-    font-size:14px
+    font-size:1.125rem
   }
   .prose {
-    font-size:15px
+    font-size:1.125rem
   }
   .post-figure img {
     max-height:350px
@@ -1314,11 +1345,11 @@ input::placeholder {
     gap:20px
   }
   .archive-date {
-    width:86px;
-    font-size:10px
+    width:125px;
+    font-size:0.875rem
   }
   .entry-row h2 {
-    font-size:27px
+    font-size:32px
   }
   .about-body {
     grid-template-columns:minmax(0,1fr);
@@ -1354,10 +1385,10 @@ input::placeholder {
     margin-top:35px
   }
   .post-deck {
-    font-size:13px
+    font-size:1.125rem
   }
   .prose {
-    font-size:14px
+    font-size:1.125rem
   }
   .prose h2 {
     font-size:31px
@@ -1370,13 +1401,13 @@ input::placeholder {
     gap:12px
   }
   .post-actions .text-link,.copy-link {
-    font-size:10px
+    font-size:0.875rem
   }
   .page-intro h1 {
     font-size:54px
   }
   .page-intro>p:not(.eyebrow) {
-    font-size:12px
+    font-size:1.125rem
   }
   .filter-tabs {
     gap:3px;
@@ -1384,7 +1415,7 @@ input::placeholder {
     justify-content:space-between
   }
   .filter-tabs button {
-    font-size:10px;
+    font-size:0.875rem;
     padding:7px 9px
   }
   .archive-row {
@@ -1393,7 +1424,7 @@ input::placeholder {
   }
   .archive-date {
     width:100%;
-    font-size:9px
+    font-size:0.875rem
   }
   .archive-row>div {
     flex:1
@@ -1402,7 +1433,7 @@ input::placeholder {
     flex:0
   }
   .entry-row h2 {
-    font-size:26px
+    font-size:32px
   }
   .large-search input {
     font-size:17px
@@ -1451,5 +1482,136 @@ input::placeholder {
 @media(max-width:600px) {
   .intro-aside {
     display:none
+  }
+}
+
+/* Larger type keeps its space on small screens instead of being scaled down. */
+.main-nav a,
+.search-trigger,
+.filter-tabs button,
+.topic-list a {
+  min-height:44px;
+}
+.filter-search {
+  flex:1 1 220px;
+}
+.filter-search input {
+  width:100%;
+  min-width:0;
+}
+.about-card,
+.side-section,
+.note-card,
+.intro-copy {
+  min-width:0;
+}
+
+@media(max-width:680px) {
+  .site-header {
+    flex-wrap:wrap;
+    height:auto;
+    padding:22px 0 18px;
+    gap:12px 18px;
+  }
+  .wordmark {
+    flex:1;
+    font-size:30px;
+  }
+  .main-nav {
+    order:3;
+    width:100%;
+    height:auto;
+    margin-left:0;
+    gap:28px;
+  }
+  .main-nav [aria-current=page]:after {
+    bottom:0;
+  }
+  .search-trigger {
+    padding:0 8px;
+    border:0;
+  }
+  .intro-bottom {
+    flex-wrap:wrap;
+  }
+  .intro-bottom>span:first-child {
+    max-width:100%;
+  }
+  .site-footer {
+    align-items:flex-start;
+    gap:24px;
+  }
+  .footer-links {
+    width:100%;
+    gap:20px;
+  }
+}
+
+@media(max-width:600px) {
+  .sidebar {
+    grid-template-columns:minmax(0,1fr);
+    gap:30px;
+  }
+  .about-card {
+    grid-row:auto;
+  }
+  .note-card {
+    max-width:420px;
+    padding:26px;
+  }
+  .archive-count {
+    flex-basis:100%;
+    margin-left:0;
+  }
+}
+
+/* CSS-only motion: no scripts, layout shifts, or hosting requirements.
+   Content remains visible when animation is unavailable or reduced. */
+@media(prefers-reduced-motion:no-preference) {
+  @keyframes journal-arrive {
+    from {
+      opacity:0.35;
+      transform:translateY(10px);
+    }
+    to {
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+  .intro-copy>.eyebrow,
+  .intro-copy>h1,
+  .intro-description,
+  .page-intro,
+  .post-header {
+    animation:journal-arrive 650ms cubic-bezier(.2,.65,.3,1) backwards;
+  }
+  .intro-copy>h1 {
+    animation-delay:80ms;
+  }
+  .intro-description {
+    animation-delay:160ms;
+  }
+  .asterisk {
+    transition:transform 700ms cubic-bezier(.2,.65,.3,1);
+  }
+  .wordmark:hover .asterisk,
+  .wordmark:focus-visible .asterisk {
+    transform:rotate(90deg);
+  }
+  .entry-arrow,
+  .text-link>span {
+    transition:transform 220ms ease;
+  }
+  .entry-row:hover .entry-arrow,
+  .entry-row:focus-within .entry-arrow,
+  .text-link:hover>span,
+  .text-link:focus-visible>span {
+    transform:translate(3px,-3px);
+  }
+  .note-card {
+    transition:transform 350ms ease;
+  }
+  .note-card:hover {
+    transform:rotate(0deg) translateY(-3px);
   }
 }
