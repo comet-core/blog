@@ -1,23 +1,23 @@
 ---
 title: A wider doorway into the dark
-description: Watching the Roman Space Telescope lift off into the night—and the quiet wonder of sending a mirror a million miles from home.
+description: Watching the Roman Space Telescope lift off from Launch Complex 39A—and the quiet wonder of sending a mirror a million miles from home.
 date: 2026-08-30
 category: Space
 featured: true
 draft: false
 image: /assets/images/roman-launch.jpg
-imageAlt: A rocket lifting off into a star-filled night sky with exhaust flames illuminating low clouds and reflecting across the water
-imageCredit: The Roman Space Telescope heads toward L2
+imageAlt: A rocket lifting off into a clear sky from Launch Complex 39A with billowing steam across the Florida marshland
+imageCredit: Liftoff from Launch Complex 39A, Kennedy Space Center
 ---
-There is a particular kind of silence that settles over a crowd just before a night launch.
+I had the NASA livestream open from 3:50 PM IST on 30 August 2026.
 
-Thousands of people standing along the water, phones held low, jackets pulled close against the salt air. You look up at the gantry standing sharp against the indigo dark, and for a few seconds, everyone forgets to speak.
+There is a quiet rhythm to the hour before a launch. The flight controllers' voices over the loop are measured and steady, almost conversational, checking through cryogenic loads and range telemetry while a few million people around the globe watch a silent gantry standing under the Florida sun.
 
-Then the ignition catches.
+At 4:56 PM IST—7:26 AM local time at Kennedy Space Center—the countdown reached zero.
 
-Night turns into a sudden, golden noon. The sound takes its time crossing the water—first the flash, then the low, chest-rattling rumble that makes the shoreline vibrate beneath your boots. A single point of fire rises, arcs, and threads itself quietly between the constellations until it is just another star moving on its own terms.
+Launch Complex 39A disappeared behind an enormous wall of white steam. The vehicle cleared the tower, carving a brilliant streak across the morning blue, and for a few minutes, everything else felt paused.
 
-Yesterday, the Nancy Grace Roman Space Telescope left Earth.
+On 30 August 2026, the Nancy Grace Roman Space Telescope began its journey outward.
 
 ## A wider way of seeing
 
@@ -27,16 +27,16 @@ Hubble showed us the universe in breathtaking, postage-stamp slivers. Webb broug
 
 Where previous telescopes looked at a single tree, Roman is designed to photograph the entire forest.
 
-It carries the name of Nancy Grace Roman—a woman who, in the 1960s, had to convince rooms full of skeptical men that astronomy’s future lay beyond the blur and tremor of Earth’s atmosphere. She became NASA’s first chief of astronomy, the "Mother of Hubble," and spent decades laying the groundwork for every space observatory we take for granted today.
+It carries the name of Nancy Grace Roman—a woman who, in the 1960s, had to convince rooms full of skeptical men that astronomy’s future lay beyond the blur and tremor of Earth’s atmosphere. She became NASA’s first chief of astronomy, often called the "Mother of Hubble," and spent decades laying the groundwork for every space observatory we take for granted today.
 
 There is something poetic about her namesake instrument: a camera built not just to look closely, but to look broadly. To map billions of galaxies, to trace the invisible geometry of dark energy, and to hunt for orphaned planets wandering between the stars without a sun to call their own.
 
 ## A million miles to L2
 
-As I write this, the spacecraft is on its long, solitary coast toward the second Lagrange point—a quiet gravitational eddy a million miles out, where Earth and Sun balance their pull.
+The spacecraft is now on its long, solitary coast toward the second Lagrange point—a quiet gravitational eddy a million miles out, where Earth and Sun balance their pull.
 
 Out there, away from the heat and radio chatter of our world, Roman will unfold its sunshield, cool its sensors down to near absolute zero, and begin drinking in photons that have been traveling across the void for ten billion years.
 
 > We are a fragile, terrestrial species that builds delicate glass and silicon contraptions, straps them to controlled explosions, and casts them into the abyss just to see what’s out there.
 
-Standing on the beach watching the exhaust plume fade into the upper atmosphere, you can’t help but feel the contrast: our feet in the mud, our eyes in the dark, and somewhere out past the Moon, a new mirror opening its gaze.
+Watching the stream from my desk half a world away, as the telemetry numbers ticked upward and the live feed showed the second stage separating against the curvature of the blue planet, that old wonder returned: our feet planted firmly on Earth, and somewhere out past the Moon, a brand new mirror opening its gaze.
