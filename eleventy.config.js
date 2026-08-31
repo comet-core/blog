@@ -18,5 +18,6 @@ export default function (config) {
   config.addFilter('json', value => JSON.stringify(value));
   config.addFilter('absolute', path => new URL(`${prefix}${String(path).replace(/^\//, '')}`, process.env.SITE_URL || 'http://localhost:8080').href);
   config.addGlobalData('buildYear', new Date().getFullYear());
+  config.addGlobalData('buildVersion', Date.now());
   return { dir: { input: 'src', output: '_site' }, pathPrefix: prefix, markdownTemplateEngine: 'njk', htmlTemplateEngine: 'njk' };
 }
