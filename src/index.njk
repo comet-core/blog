@@ -3,11 +3,24 @@ layout: base.njk
 section: journal
 ---
 <section class="intro" aria-labelledby="intro-heading">
-  <div class="intro-copy"><p class="eyebrow"><span class="status-dot"></span>A PERSONAL JOURNAL BY {{ site.author | upper }}</p>
-    <h1 id="intro-heading">{{ site.headline }}<br><em>{{ site.headlineAccent }}</em></h1>
-    <p class="intro-description">{{ site.intro }}</p>
+  <div class="intro-grid">
+    <div class="intro-copy">
+      <p class="eyebrow"><span class="status-dot"></span>A PERSONAL JOURNAL BY {{ site.author | upper }}</p>
+      <h1 id="intro-heading">{{ site.headline }}<br><em>{{ site.headlineAccent }}</em></h1>
+      <p class="intro-description">{{ site.intro }}</p>
+    </div>
+    <aside class="intro-quote-card" data-quote-widget aria-label="Daily Quote">
+      <div class="quote-card-header">
+        <span class="small-label"><span class="status-dot"></span> DAILY MARGIN</span>
+        <button class="quote-refresh-btn" type="button" aria-label="Shuffle quote" title="Shuffle quote" data-quote-refresh><span class="refresh-icon" aria-hidden="true">↺</span></button>
+      </div>
+      <blockquote class="quote-text" data-quote-text>“Somewhere, something incredible is waiting to be known.”</blockquote>
+      <div class="quote-card-footer">
+        <cite class="quote-author" data-quote-author>— Carl Sagan</cite>
+        <span class="quote-topic-tag" data-quote-topic>Space</span>
+      </div>
+    </aside>
   </div>
-  <div class="intro-aside" aria-hidden="true"><span class="margin-mark">a place for<br>the in-between.</span><span class="hand-arrow">⤵</span></div>
   <div class="intro-bottom"><span>OBSERVATIONS, WRITINGS & THE OCCASIONAL DETOUR</span><span>EST. 2026 <span class="tiny-star">✳</span></span></div>
 </section>
 <div class="journal-layout">

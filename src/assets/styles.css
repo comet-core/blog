@@ -245,27 +245,95 @@ kbd {
 .intro {
   position:relative
 }
-.intro-aside {
-  position:absolute;
-  right:88px;
-  top:117px;
-  transform:rotate(-9deg);
-  color:#a8ad90
+.intro-grid {
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(280px,360px);
+  gap:48px;
+  align-items:center;
+  justify-content:space-between
 }
-.margin-mark {
+@media (max-width:900px) {
+  .intro-grid {
+    grid-template-columns:1fr;
+    gap:32px
+  }
+}
+.intro-quote-card {
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:24px 28px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  position:relative;
+  transition:border-color .2s ease,transform .2s ease;
+  box-shadow:0 4px 20px rgba(0,0,0,.18)
+}
+.intro-quote-card:hover {
+  border-color:var(--accent)
+}
+.quote-card-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between
+}
+.quote-refresh-btn {
+  background:transparent;
+  border:1px solid var(--line);
+  color:var(--muted);
+  border-radius:50%;
+  width:28px;
+  height:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  padding:0;
+  transition:all .2s ease
+}
+.quote-refresh-btn:hover {
+  color:var(--accent);
+  border-color:var(--accent);
+  transform:rotate(90deg)
+}
+.quote-text {
+  margin:0;
   font-family:var(--serif);
-  font-size:27px;
+  font-size:1.35rem;
   font-style:italic;
-  line-height:1.15;
-  display:block
+  line-height:1.45;
+  color:var(--ink);
+  transition:opacity .15s ease
 }
-.hand-arrow {
-  font-family:var(--serif);
-  font-size:53px;
-  display:block;
-  padding-left:39px;
-  transform:rotate(-20deg);
-  color:var(--faint)
+.quote-card-footer {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding-top:8px;
+  border-top:1px solid rgba(255,255,255,.05)
+}
+.quote-author {
+  font-family:var(--sans);
+  font-size:0.875rem;
+  color:var(--muted);
+  font-style:normal;
+  font-weight:500
+}
+.quote-topic-tag {
+  font-size:0.75rem;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:rgba(198,205,153,.08);
+  border:1px solid rgba(198,205,153,.18);
+  padding:2px 8px;
+  border-radius:4px
+}
+.intro-quote-card.quote-updating .quote-text,
+.intro-quote-card.quote-updating .quote-author {
+  opacity:0
 }
 .intro-bottom {
   margin-top:44px;
