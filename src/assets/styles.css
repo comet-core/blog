@@ -205,8 +205,11 @@ kbd {
   font-size:0.875rem;
   letter-spacing:1.8px;
   font-weight:500;
-  line-height:1.6;
-  color:var(--muted)
+  line-height:1;
+  color:var(--muted);
+  display:inline-flex;
+  align-items:center;
+  gap:8px
 }
 .eyebrow {
   display:flex;
@@ -217,11 +220,12 @@ kbd {
 }
 .status-dot {
   display:inline-block;
-  width:5px;
-  height:5px;
+  width:6px;
+  height:6px;
   border-radius:50%;
   background:var(--accent);
-  flex-shrink:0
+  flex-shrink:0;
+  margin:0
 }
 .intro h1 {
   font-family:var(--serif);

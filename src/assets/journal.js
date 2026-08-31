@@ -106,12 +106,7 @@ if (quoteWidget) {
   const topicEl = quoteWidget.querySelector('[data-quote-topic]');
   const refreshBtn = quoteWidget.querySelector('[data-quote-refresh]');
 
-  const now = new Date();
-  const startOfYear = new Date(now.getFullYear(), 0, 0);
-  const diff = now - startOfYear;
-  const oneDay = 1000 * 60 * 60 * 24;
-  const dayOfYear = Math.floor(diff / oneDay);
-  let currentIndex = dayOfYear % quotes.length;
+  let currentIndex = Math.floor(Math.random() * quotes.length);
 
   function renderQuote(index, animate = false) {
     const item = quotes[index];
