@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#191b18">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | url }}">
+  <title>{% if title %}{{ title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  <link rel="canonical" href="{{ page.url | absolute }}">
+  <meta property="og:type" content="{% if isPost %}article{% else %}website{% endif %}">
+  <meta property="og:title" content="{{ title or site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:url" content="{{ page.url | absolute }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+  <meta name="twitter:title" content="{{ title or site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  {% if image %}<meta property="og:image" content="{{ image | absolute }}"><meta property="og:image:alt" content="{{ imageAlt }}"><meta name="twitter:image" content="{{ image | absolute }}">{% endif %}
+  <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | url }}">
+  <script src="{{ '/assets/journal.js' | url }}" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="wordmark" href="{{ '/' | url }}" aria-label="{{ site.title }}, home"><span class="asterisk" aria-hidden="true">✳</span>{{ site.title }}<span class="wordmark-dot">.</span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="{{ '/' | url }}" {% if section == 'journal' %}aria-current="page"{% endif %}>Journal</a>
+        <a href="{{ '/archive/' | url }}" {% if section == 'archive' %}aria-current="page"{% endif %}>Archive</a>
+        <a href="{{ '/about/' | url }}" {% if section == 'about' %}aria-current="page"{% endif %}>About</a>
+      </nav>
+      <a class="search-trigger" href="{{ '/search/' | url }}" aria-label="Search the journal"><span class="search-icon" aria-hidden="true"></span><span class="search-label">Search</span><kbd>/</kbd></a>
+    </header>
+    <main id="main">{{ content | safe }}</main>
+    <footer class="site-footer">
+      <div><a class="footer-brand" href="{{ '/' | url }}">{{ site.title }}.</a><span class="footer-note">A little corner, not a loud one.</span></div>
+      <div class="footer-links"><span>© {{ buildYear }} {{ site.author }}</span><a href="{{ '/feed.xml' | url }}">RSS <span aria-hidden="true">↗</span></a><a href="#top" data-back-top>Back to top <span aria-hidden="true">↑</span></a></div>
+    </footer>
+  </div>
+</body>
+</html>

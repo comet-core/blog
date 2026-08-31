@@ -1,0 +1,14 @@
+---
+layout: base.njk
+title: Search the journal
+description: Find a thought, a word, or something you half remember in the journal.
+permalink: /search/
+---
+<section class="collection-page search-page" data-filter-page>
+  <header class="page-intro"><p class="eyebrow">SOMETHING ON YOUR MIND?</p><h1>Find a <em>little something.</em></h1><p>A word, a thought, a thing you half remember.</p></header>
+  <label class="large-search"><span class="search-icon" aria-hidden="true"></span><input type="search" data-filter-query placeholder="Search the journal…" aria-label="Search the journal" autofocus><kbd>ESC TO CLEAR</kbd></label>
+  <p class="filter-status" role="status" data-filter-status>{{ collections.posts.length }} entries to explore</p>
+  <noscript><p class="sample-label">Search needs JavaScript. You can still browse every entry below.</p></noscript>
+  <div class="archive-entries">{% for post in collections.posts %}<article class="entry-row" data-entry data-category="{{ post.data.category }}" data-search="{{ post.data.title | lower }} {{ post.data.description | lower }} {{ post.templateContent | striptags | lower | escape }}"><div><div class="entry-meta"><span class="category category-{{ post.data.category | slugify }}">{{ post.data.category }}</span><span>{{ post.date | dateDisplay }}</span></div><h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2><p>{{ post.data.description }}</p></div><a class="entry-arrow" href="{{ post.url | url }}" aria-label="Read {{ post.data.title }}">↗</a></article>{% endfor %}</div>
+  <div class="empty-state" data-filter-empty {% if collections.posts.length %}hidden{% endif %}><span class="empty-star" aria-hidden="true">✳</span><h2>That one got away.</h2><p>No entries match. Try a different word, or start fresh.</p><button type="button" class="text-link reset-filters" data-reset-filters>Clear search ↗</button></div>
+</section>

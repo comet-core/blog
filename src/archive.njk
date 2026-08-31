@@ -1,0 +1,17 @@
+---
+layout: base.njk
+title: The archive
+description: Every entry, in its own time. Browse the journal by subject or search for something that stayed with you.
+section: archive
+permalink: /archive/
+---
+<section class="collection-page" data-filter-page>
+  <header class="page-intro"><p class="eyebrow">THE PAGES SO FAR</p><h1>Nothing lost.<br><em>Just filed away.</em></h1><p>Every entry, in its own time. Follow a thread or see where you end up.</p></header>
+  <div class="archive-tools"><div class="filter-tabs" aria-label="Filter entries by topic" role="group"><button type="button" data-topic="all" aria-pressed="true">All entries <span>{{ collections.posts.length }}</span></button>{% for topic in site.topics %}<button type="button" data-topic="{{ topic }}" aria-pressed="false">{{ topic }}</button>{% endfor %}</div><label class="filter-search"><span class="search-icon" aria-hidden="true"></span><input type="search" data-filter-query placeholder="Find an entry…" aria-label="Search entries"></label></div>
+  <p class="filter-status" role="status" data-filter-status>{{ collections.posts.length }} entries</p>
+  <noscript><p class="sample-label">All entries are listed below. Enable JavaScript to use search and topic filters.</p></noscript>
+  <div class="archive-entries">
+    {% for post in collections.posts %}<article class="entry-row archive-row" data-entry data-category="{{ post.data.category }}" data-search="{{ post.data.title | lower }} {{ post.data.description | lower }} {{ post.templateContent | striptags | lower | escape }}"><time class="archive-date" datetime="{{ post.date | dateISO }}">{{ post.date | dateDisplay }}</time><div><div class="entry-meta"><span class="category category-{{ post.data.category | slugify }}">{{ post.data.category }}</span><span>{{ post.templateContent | readingTime }} min read</span></div><h2><a href="{{ post.url | url }}">{{ post.data.title }}</a></h2><p>{{ post.data.description }}</p></div><a class="entry-arrow" href="{{ post.url | url }}" aria-label="Read {{ post.data.title }}">↗</a></article>{% endfor %}
+  </div>
+  <div class="empty-state" data-filter-empty {% if collections.posts.length %}hidden{% endif %}><span class="empty-star" aria-hidden="true">✳</span><h2>No pages here, yet.</h2><p>Try another word or follow a different thread.</p><button type="button" class="text-link reset-filters" data-reset-filters>Show all entries ↗</button></div>
+</section>

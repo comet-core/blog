@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+<article class="post-page">
+  <a class="back-link" href="{{ '/' | url }}">← Back to the journal</a>
+  <header class="post-header"><div class="entry-meta"><span class="category category-{{ category | slugify }}">{{ category }}</span><time datetime="{{ page.date | dateISO }}">{{ page.date | dateDisplay }}</time><span>·</span><span>{{ content | readingTime }} min read</span></div><h1>{{ title }}</h1><p class="post-deck">{{ description }}</p><p class="post-byline">Words by {{ site.author }}</p></header>
+  {% if sample %}<p class="sample-label">SAMPLE ENTRY · A little inspiration for your first post.</p>{% endif %}
+  {% if image %}<figure class="post-figure"><img src="{{ image | url }}" alt="{{ imageAlt }}" width="1400" height="933">{% if imageCredit %}<figcaption>{{ imageCredit }}{% if imageSource %} · <a href="{{ imageSource }}">Source ↗</a>{% endif %}</figcaption>{% endif %}</figure>{% endif %}
+  <div class="prose">{{ content | safe }}</div>
+  <div class="post-end"><span aria-hidden="true">✳</span><p>That’s all for this page. Thanks for being here.</p></div>
+  <div class="post-actions"><a class="text-link" href="{{ '/archive/' | url }}">More from the journal ↗</a><button class="copy-link" type="button" data-copy-link>Copy link <span aria-hidden="true">↗</span></button><span class="sr-only" role="status" data-copy-status></span></div>
+</article>
