@@ -1,6 +1,6 @@
 # In the margins.
 
-A personal journal by Subhro. Everyday observations, longer writing, and passing thoughts. 
+A personal journal by me. Everyday observations, longer writing, and passing thoughts. 
 
 Read it live: [https://comet-core.github.io/blog](https://comet-core.github.io/blog)
 
