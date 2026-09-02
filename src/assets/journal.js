@@ -132,3 +132,22 @@ if (quoteWidget) {
     renderQuote(currentIndex, true);
   });
 }
+
+// Margin term popovers (touch + mobile support)
+document.querySelectorAll('.margin-term').forEach(term => {
+  term.addEventListener('click', event => {
+    event.stopPropagation();
+    const isActive = term.classList.contains('is-active');
+    document.querySelectorAll('.margin-term.is-active').forEach(t => t.classList.remove('is-active'));
+    if (!isActive) term.classList.add('is-active');
+  });
+});
+document.addEventListener('click', () => {
+  document.querySelectorAll('.margin-term.is-active').forEach(t => t.classList.remove('is-active'));
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape') {
+    document.querySelectorAll('.margin-term.is-active').forEach(t => t.classList.remove('is-active'));
+  }
+});
+

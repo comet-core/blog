@@ -101,7 +101,7 @@ For the first time, astronomers may begin to understand just how common these or
 
 ## A million miles to L2
 
-Roman is now beginning a roughly three-month journey toward the second Sun-Earth Lagrange point, or L2, approximately one million miles — 1.5 million kilometres — from Earth.
+Roman is now beginning a roughly three-month journey toward the <span class="margin-term" tabindex="0">second Sun-Earth Lagrange point, or L2<span class="margin-card" role="tooltip"><span class="margin-card-header"><span class="margin-card-title">Lagrange Point 2 (L2)</span><span class="margin-card-tag">Orbital Mechanics</span></span><span class="margin-card-body">A gravitational balance point 1.5 million km behind Earth where Sun and Earth gravity combine to let a spacecraft orbit the Sun in lockstep with Earth. A single sunshield blocks heat and light from the Sun, Earth, and Moon simultaneously—keeping infrared telescopes like Webb and Roman ultra-cold and unobstructed.</span><span class="margin-card-arrow" aria-hidden="true"></span></span></span>, approximately one million miles — 1.5 million kilometres — from Earth.
 
 It will not sit motionless at L2. Instead, Roman will enter a large orbit around the region.
 

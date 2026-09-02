@@ -1708,3 +1708,91 @@ input::placeholder {
     transform:rotate(0deg) translateY(-3px);
   }
 }
+
+/* Margin Card Popovers (In the margins) */
+.margin-term {
+  position: relative;
+  display: inline;
+  text-decoration: underline dotted 1.5px var(--accent);
+  text-underline-offset: 3.5px;
+  cursor: help;
+  color: var(--ink);
+  font-weight: 500;
+}
+.margin-term:focus {
+  outline: none;
+}
+.margin-card {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: 320px;
+  max-width: min(320px, calc(100vw - 32px));
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5), 0 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 14px 16px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s cubic-bezier(0.16, 1, 0.3, 1), transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.2s;
+  font-family: var(--sans);
+  font-size: 0.84375rem;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: left;
+  font-weight: 400;
+  color: var(--muted);
+}
+.margin-term:hover .margin-card,
+.margin-term:focus-within .margin-card,
+.margin-term.is-active .margin-card {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.margin-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.margin-card-title {
+  font-family: var(--sans);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.margin-card-tag {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(198, 205, 153, 0.15);
+  color: var(--accent);
+}
+.margin-card-body {
+  margin: 0;
+  display: block;
+  color: var(--muted);
+}
+.margin-card-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--line);
+}
