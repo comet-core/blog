@@ -1,0 +1,31 @@
+---
+layout: base.njk
+title: Follow the journal
+description: Receive a quiet email when a new page is published, or follow the journal in your feed reader.
+section: subscribe
+permalink: /subscribe/
+---
+<section class="subscribe-page">
+  <div class="subscribe-copy">
+    <p class="eyebrow"><span class="status-dot"></span>NOTES FROM THE MARGINS</p>
+    <h1>A new page,<br><em>occasionally.</em></h1>
+    <p class="subscribe-intro">Receive a quiet note when something new is published. No schedule, no noise—just a way to know when there’s another page to read.</p>
+    <div class="subscribe-actions">
+      <a class="primary-link" href="{{ site.newsletter.url }}">Continue to email signup <span aria-hidden="true">↗</span></a>
+      <p>You’ll finish signing up securely with Buttondown. Your email address is never stored by this website or in its public code.</p>
+    </div>
+  </div>
+  <aside class="subscribe-aside" aria-label="What to expect">
+    <span class="small-label">WHAT TO EXPECT</span>
+    <ul class="subscribe-promises">
+      <li><span aria-hidden="true">01</span><p><strong>Only new pages.</strong> A short email when an entry is published.</p></li>
+      <li><span aria-hidden="true">02</span><p><strong>You’re in control.</strong> Leave at any time using the link in every email.</p></li>
+      <li><span aria-hidden="true">03</span><p><strong>Sent by a person.</strong> Updates are reviewed and sent manually for now.</p></li>
+    </ul>
+    <div class="feed-option">
+      <span class="small-label">PREFER A READER?</span>
+      <p>Follow the Atom feed instead—no email address needed.</p>
+      <a class="text-link" href="{{ '/feed.xml' | url }}">Open the journal feed <span aria-hidden="true">↗</span></a>
+    </div>
+  </aside>
+</section>

@@ -56,6 +56,11 @@ for (const match of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) {
 
 assert(existsSync(join(output, '.nojekyll')), 'Missing .nojekyll');
 assert(existsSync(join(output, '404.html')), 'Missing custom 404');
+const subscribe = readFileSync(join(output, 'subscribe/index.html'), 'utf8');
+assert(/href="https:\/\/[^\"]+"[^>]*>Continue to email signup/.test(subscribe), 'Subscription page must link to a secure hosted signup');
+assert(subscribe.includes('href="/feed.xml"') || subscribe.includes('href="/journal-test/feed.xml"'), 'Subscription page must offer the journal feed');
+const home = readFileSync(join(output, 'index.html'), 'utf8');
+assert(/class="intro-actions"[\s\S]*href="\/(?:journal-test\/)?subscribe\/"/.test(home), 'Homepage hero must feature the email updates action');
 const posts = files.filter(file => relative(output, file).replace(/\\/g, '/').startsWith('journal/') && extname(file) === '.html');
 const feed = readFileSync(join(output, 'feed.xml'), 'utf8');
 assert.equal((feed.match(/<entry>/g) || []).length, posts.length, 'Feed must contain every published post');

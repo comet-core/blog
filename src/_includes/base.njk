@@ -31,6 +31,7 @@
         <a href="{{ '/' | url }}" {% if section == 'journal' %}aria-current="page"{% endif %}>Journal</a>
         <a href="{{ '/archive/' | url }}" {% if section == 'archive' %}aria-current="page"{% endif %}>Archive</a>
         <a href="{{ '/about/' | url }}" {% if section == 'about' %}aria-current="page"{% endif %}>About</a>
+        <a href="{{ '/subscribe/' | url }}" {% if section == 'subscribe' %}aria-current="page"{% endif %}>Email updates</a>
       </nav>
       <a class="search-trigger" href="{{ '/search/' | url }}" aria-label="Search the journal"><span class="search-icon" aria-hidden="true"></span><span class="search-label">Search</span><kbd>/</kbd></a>
     </header>
