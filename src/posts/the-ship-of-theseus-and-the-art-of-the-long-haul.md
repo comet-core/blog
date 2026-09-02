@@ -34,7 +34,7 @@ Stasis is not preservation. In a universe governed by friction, weather, and dec
 
 ## The refactored life
 
-Once you understand that, the paradox disappears—and you start seeing Theseus’s ship everywhere.
+Once you stop asking the question purely in terms of original material, the paradox starts looking very different—and you start seeing Theseus’s ship everywhere.
 
 Consider software. Take any production codebase that has been running for seven or eight years. Over time, libraries are updated, legacy endpoints are deprecated, modules are rewritten, and algorithms are optimized. Eventually, you can search git history and discover that literally zero lines of the original prototype remain in production.
 
@@ -56,6 +56,8 @@ But staying afloat requires regular dry-dock inspections.
 
 You are going to outgrow opinions you were once certain of. You are going to replace broken workflows, learn better tools, and discard habits that no longer hold up under pressure. None of that means you failed or lost who you were. It just means you had the good sense to pull out the rot before it reached the keel.
 
-The Athenians had it right the first time. The identity of the ship was never locked inside a specific piece of timber.
+The Athenians had it right the first time. The identity of the ship was never locked inside a particular plank of timber. It lived in the continuity of the vessel: its history, its purpose, and the work required to keep it seaworthy.
 
-It was in the voyage, the purpose, and the willingness of the crew to keep the hull watertight.
+Perhaps that is what the long haul actually demands. Not remaining unchanged, but changing carefully enough that the important parts continue forward.
+
+Sometimes preservation means knowing which plank to replace.
