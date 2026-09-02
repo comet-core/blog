@@ -3,7 +3,7 @@ title: "A wider way of seeing: The launch of the Nancy Grace Roman Space Telesco
 description: "Watching the Roman Space Telescope lift off from Launch Complex 39A aboard Falcon Heavy—and the quiet wonder of mapping the cosmic forest."
 date: 2026-08-30
 category: Space
-featured: true
+featured: false
 draft: false
 image: /assets/images/roman_transit.jpg
 imageAlt: SpaceX Falcon Heavy in solar transit during the launch of the Nancy Grace Roman Space Telescope

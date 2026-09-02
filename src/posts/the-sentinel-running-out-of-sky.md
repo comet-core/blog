@@ -5,6 +5,9 @@ date: 2026-09-02
 category: Space
 featured: false
 draft: false
+image: /assets/images/swift_space.jpeg
+imageAlt: Artist rendering of the Neil Gehrels Swift Observatory in orbit
+imageCredit: Neil Gehrels Swift Observatory in orbit · NASA / Spectrum Astro
 ---
 Most space telescopes are contemplative creatures.
 
