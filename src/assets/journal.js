@@ -77,7 +77,7 @@ document.querySelectorAll('[data-back-top]').forEach(link => link.addEventListen
 
 const quoteWidget = document.querySelector('[data-quote-widget]');
 if (quoteWidget) {
-  const quotes = [
+  let quotes = [
     { quote: "Somewhere, something incredible is waiting to be known.", author: "Carl Sagan", topic: "Space" },
     { quote: "How we spend our days is, of course, how we spend our lives.", author: "Annie Dillard", topic: "Everyday" },
     { quote: "The road goes on forever and the party never ends.", author: "Robert Earl Keen", topic: "Automotive" },
@@ -100,6 +100,16 @@ if (quoteWidget) {
     { quote: "Speed has never killed anyone. Suddenly becoming stationary, that's what gets you.", author: "Jeremy Clarkson", topic: "Automotive" },
     { quote: "What is written without effort is in general read without pleasure.", author: "Samuel Johnson", topic: "Writings" }
   ];
+
+  const quotesDataEl = document.getElementById('quotes-data');
+  if (quotesDataEl) {
+    try {
+      const parsed = JSON.parse(quotesDataEl.textContent);
+      if (Array.isArray(parsed) && parsed.length > 0) quotes = parsed;
+    } catch (e) {
+      console.error('Failed to parse quotes data:', e);
+    }
+  }
 
   const textEl = quoteWidget.querySelector('[data-quote-text]');
   const authorEl = quoteWidget.querySelector('[data-quote-author]');
