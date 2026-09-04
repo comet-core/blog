@@ -7,7 +7,7 @@ featured: false
 draft: false
 image: /assets/images/bepicolombo_mtm.jpg
 imageAlt: Artist rendering of the BepiColombo Mercury Transfer Module separating from the science orbiters in deep space near Mercury
-imageCredit: BepiColombo MTM separation concept · ESA / JAXA
+imageCredit: BepiColombo MTM separation · ESA / ATG medialab
 ---
 I had the European Space Agency broadcast pulled up on the evening of 3 September 2026, hoping—perhaps naively—for something to look at.
 
