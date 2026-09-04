@@ -15,9 +15,9 @@ We have been thoroughly spoiled by modern rocketry. Four days earlier, watching 
 
 Deep space does not care about broadcast production values.
 
-For BepiColombo’s critical separation, there were no live external camera feeds streaming 4K video from the inner solar system. There were no dramatic wide-angle shots of pyrotechnic bolts flashing or mechanical springs gently nudging the massive transfer module away against the backdrop of Mercury’s battered craters. 
+For BepiColombo’s critical separation, there were no live external camera feeds streaming 4K video from the inner solar system. There were no dramatic wide-angle shots of pyrotechnic bolts flashing or mechanical springs gently nudging the massive transfer module away against the backdrop of Mercury’s battered craters.
 
-Instead, I sat through a livestream that consisted almost entirely of a room full of engineers at the European Space Operations Centre (ESOC) in Darmstadt, Germany, staring into dual-monitor workstations, speaking in hushed murmurs, and waiting for radio carrier waves. 
+Instead, I sat through a livestream that consisted almost entirely of a room full of engineers at the European Space Operations Centre (ESOC) in Darmstadt, Germany, staring into dual-monitor workstations, speaking in hushed murmurs, and waiting for radio carrier waves.
 
 I watched it live, only to be reminded that in interplanetary navigation, the most consequential moments arrive without a live view. You stare at telemetry, you wait through light-time delay, and you tell yourself: *whatever, at least the numbers look good.*
 
@@ -25,17 +25,17 @@ And the numbers, as it turned out, were flawless.
 
 ## The acquisition of signal
 
-At 15:52 CEST (19:22 IST), the tension inside the control room dissolved into applause.
+At 15:52 CEST (19:22 IST), the waiting inside the control room finally dissolved into applause.
 
-Signals acquired simultaneously through ESA’s 35-metre deep-space tracking antennas at Cebreros in Spain and Malargüe in Argentina confirmed that the pyrotechnic separation mechanism had fired cleanly. The **Mercury Transfer Module (MTM)** had severed its structural and electrical umbilical from the two science orbiters, drifting away into its own solar orbit.
+Nearly two hours earlier, at around 14:00 CEST, the Mercury Transfer Module had been commanded to separate. With the spacecraft more than 200 million kilometres away, there was no possibility of real-time intervention; flight controllers had to trust onboard automation to execute the sequence in silence. At 14:41 CEST, a preliminary Doppler shift detected on the radio link had already suggested that the manoeuvre had worked. Now, simultaneous acquisition of signal through ESA’s deep-space tracking antennas at Cebreros in Spain and Malargüe in Argentina confirmed that the separation had succeeded cleanly and the remaining spacecraft was healthy.
 
-Moments later, updated telemetry confirmed that the Mercury Planetary Orbiter (MPO) had stabilized, its primary solar array was generating electrical power, and the mission stack was healthy.
+Moments later, updated telemetry confirmed that the Mercury Planetary Orbiter (MPO) had stabilized, its primary solar array was generating electrical power, and the mission stack was nominal.
 
 After seven years, ten months, and fifteen days of carrying the entire expedition on its back, the workhorse had been let go.
 
 ## The interplanetary pack mule
 
-The Mercury Transfer Module was never designed to be celebrated for its scientific discoveries. It carried no spectrometers, no magnetometers, and no high-resolution cameras meant to photograph planetary surface minerals. 
+The Mercury Transfer Module was never designed to be celebrated for its scientific discoveries. It carried no spectrometers, no magnetometers, and no high-resolution cameras meant to photograph planetary surface minerals.
 
 It was built to do one thing: push an extraordinary amount of mass into the gravitational basement of the solar system.
 
@@ -43,29 +43,31 @@ It was built to do one thing: push an extraordinary amount of mass into the grav
 
 The MTM provided that braking force through four QinetiQ T6 ion thrusters powered by a 30-metre wingspan of solar panels. For nearly eight years, those thrusters whispered a pale blue glow of xenon ions into the vacuum, working in tandem with nine planetary flybys—one of Earth, two of Venus, and six of Mercury itself.
 
+In fact, the MTM’s final electric-propulsion thrust had already concluded months earlier, on 15 June 2026. By the time September arrived, it had been coasting as a silent companion stage whose principal propulsive job was complete, simply waiting for the physical separation window.
+
 It carried both European Space Agency’s **Mercury Planetary Orbiter (MPO)** and Japan Aerospace Exploration Agency’s (JAXA) **Mio (Mercury Magnetospheric Orbiter)** tucked safely beneath a protective sunshield. Without the MTM’s power bus, thermal radiators, and relentless thrusting, neither orbiter could have survived the voyage.
 
 ## The glitch that reshuffled the deck
 
-The journey was anything but routine. In April 2024, engineers discovered an electrical anomaly in the MTM’s power distribution system that prevented the drive units from delivering full power to the ion thrusters. 
+The journey was anything but routine. In April 2024, engineers discovered an electrical anomaly in the MTM’s power distribution system that prevented the drive units from delivering full power to the ion thrusters.
 
 It was the kind of hardware flaw that could easily have doomed an interplanetary mission. With reduced maximum thrust, BepiColombo could no longer execute the precise burns originally scheduled to bleed off velocity ahead of the planned December 2025 arrival.
 
 What followed was a masterclass in orbital triage. Mission controllers at ESOC redesigned the entire cruise trajectory, inserting additional low-thrust coast arcs and squeezing maximum efficiency out of the remaining Mercury flybys. The revision pushed the final Mercury orbit insertion back by eleven months, to **21 November 2026**.
 
-The MTM was battered and running on compromised circuitry, but it held together long enough to deliver its passengers to the final threshold.
+The MTM was operating under a propulsion limitation that had already forced the entire arrival plan to be rewritten, but it held together long enough to deliver its passengers to the final threshold.
 
 ## Cast adrift
 
 Having brought the orbiters to the doorstep of their destination, the transfer module had become a liability. Its massive solar arrays and propulsion structure, so indispensable during cruise, would create unacceptable inertia and thermal complications during the intense orbital insertion burns.
 
-So, 78 days out from Mercury orbit insertion, the stack separated. 
+So, 78 days out from Mercury orbit insertion, the stack separated.
 
-The MTM will not crash into Mercury, nor will it return to Earth. Released into a slightly offset heliocentric path, it will drift through the blistering inner solar system for millions of years—a silent, sun-bleached frame of carbon composite and solar cells orbiting the star it spent eight years braking against.
+The MTM will not follow the orbiters into Mercury orbit. Released onto its own heliocentric trajectory, the structure that carried BepiColombo across the inner Solar System will simply continue around the Sun, its job finished.
 
 ## The road to November
 
-With the MTM gone, the remaining spacecraft stack—MPO and Mio—is now flying on a purely ballistic trajectory.
+With the MTM gone, solar-electric propulsion is finished for BepiColombo. From here, MPO’s chemical propulsion system takes over, making the final trajectory corrections and eventually performing the burn that will capture the combined spacecraft into orbit around Mercury.
 
 The countdown toward the primary science mission is finally on its closing leg:
 
@@ -75,4 +77,4 @@ The countdown toward the primary science mission is finally on its closing leg:
 
 I may have been disappointed by the lack of a live video feed on Thursday evening. But as the mission directors hugged in Darmstadt and the telemetry confirmed that all systems were nominal, the quiet reality of spaceflight settled in once again.
 
-The machines we build to explore the farthest corners of our solar system rarely get an audience for their most heroic acts. They just do their work, sever their tethers, and slip away into the dark.
+The machines we send across the Solar System rarely get an audience for their most important acts. Sometimes there is no picture at all—just a carrier spike on a monitor, a room in Darmstadt breaking into applause, and the knowledge that somewhere more than 200 million kilometres away, a machine did exactly what it was asked to do, severed its last connection, and slipped away.
