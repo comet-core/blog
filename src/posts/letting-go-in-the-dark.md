@@ -27,7 +27,7 @@ And the numbers, as it turned out, were flawless.
 
 At 15:52 CEST (19:22 IST), the waiting inside the control room finally dissolved into applause.
 
-Nearly two hours earlier, at around 14:00 CEST, the Mercury Transfer Module had been commanded to separate. With the spacecraft more than 200 million kilometres away, there was no possibility of real-time intervention; flight controllers had to trust onboard automation to execute the sequence in silence. At 14:41 CEST, a preliminary Doppler shift detected on the radio link had already suggested that the manoeuvre had worked. Now, simultaneous acquisition of signal through ESA’s deep-space tracking antennas at Cebreros in Spain and Malargüe in Argentina confirmed that the separation had succeeded cleanly and the remaining spacecraft was healthy.
+Nearly two hours earlier, at around 14:00 CEST (17:30 IST), the Mercury Transfer Module had been commanded to separate. With the spacecraft more than 200 million kilometres away, there was no possibility of real-time intervention; flight controllers had to trust onboard automation to execute the sequence in silence. At 14:41 CEST (18:11 IST), a preliminary Doppler shift detected on the radio link had already suggested that the manoeuvre had worked. Now, simultaneous acquisition of signal through ESA’s deep-space tracking antennas at Cebreros in Spain and Malargüe in Argentina confirmed that the separation had succeeded cleanly and the remaining spacecraft was healthy.
 
 Moments later, updated telemetry confirmed that the Mercury Planetary Orbiter (MPO) had stabilized, its primary solar array was generating electrical power, and the mission stack was nominal.
 
