@@ -1,0 +1,18 @@
+{
+  "name": "In the margins",
+  "short_name": "Margins",
+  "description": "An independent little journal. Everyday observations, unfinished thoughts, and words worth keeping.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#191b18",
+  "theme_color": "#191b18",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

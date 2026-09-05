@@ -3,6 +3,9 @@ const prefix = `/${(process.env.PATH_PREFIX || '').replace(/^\/+|\/+$/g, '')}/`.
 export default function (config) {
   config.addPassthroughCopy({ 'src/assets': 'assets' });
   config.addPassthroughCopy({ 'src/.nojekyll': '.nojekyll' });
+  config.addPassthroughCopy({ 'src/manifest.json': 'manifest.json' });
+  config.addPassthroughCopy({ 'src/sw.js': 'sw.js' });
+  config.addPassthroughCopy({ 'src/webpushr-sw.js': 'webpushr-sw.js' });
   config.addPreprocessor('drafts', 'md,njk', data => {
     if (data.draft === true) return false;
   });

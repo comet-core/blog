@@ -11,5 +11,11 @@
   "newsletter": {
     "url": "https://buttondown.com/subhrodeep/archive"
   },
+  "notifications": {
+    "enabled": true,
+    "provider": "webpushr",
+    "webpushrKey": "",
+    "prompt": "Quiet notifications when a new journal entry is published."
+  },
   "showExamples": false
 }

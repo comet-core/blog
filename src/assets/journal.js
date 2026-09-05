@@ -161,3 +161,139 @@ document.addEventListener('keydown', event => {
   }
 });
 
+// Service Worker Registration & Notification Management
+(function initNotifications() {
+  const manifestLink = document.querySelector('link[rel="manifest"]');
+  const swPath = manifestLink ? manifestLink.getAttribute('href').replace('manifest.json', 'sw.js') : '/sw.js';
+
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register(swPath).catch(err => {
+        console.warn('Service worker registration:', err);
+      });
+    });
+  }
+
+  // PWA Install prompt handling
+  let deferredPrompt = null;
+  window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault();
+    deferredPrompt = event;
+    const installCard = document.querySelector('[data-install-card]');
+    if (installCard) installCard.hidden = false;
+  });
+
+  document.querySelector('[data-install-btn]')?.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        const installCard = document.querySelector('[data-install-card]');
+        if (installCard) installCard.hidden = true;
+      }
+      deferredPrompt = null;
+    }
+  });
+
+  // Notification UI controls on /subscribe/
+  const card = document.querySelector('[data-notification-card]');
+  if (!card) return;
+
+  const btn = card.querySelector('[data-notification-btn]');
+  const label = card.querySelector('[data-notification-label]');
+  const status = card.querySelector('[data-notification-status]');
+  const testRow = card.querySelector('[data-notification-test-row]');
+  const testBtn = card.querySelector('[data-notification-test-btn]');
+  const disableBtn = card.querySelector('[data-notification-disable-btn]');
+
+  const isSupported = 'Notification' in window && 'serviceWorker' in navigator;
+
+  function updateUI() {
+    if (!isSupported) {
+      if (btn) btn.disabled = true;
+      if (label) label.textContent = 'Device notifications unsupported';
+      if (status) status.textContent = 'This browser does not support web push notifications. Try modern Chrome, Safari, or Firefox.';
+      if (testRow) testRow.hidden = true;
+      return;
+    }
+
+    const permission = Notification.permission;
+    if (permission === 'granted') {
+      btn.classList.add('is-active');
+      btn.disabled = false;
+      label.textContent = 'Notifications Active ✓';
+      status.textContent = 'You’re subscribed. You’ll receive a calm on-screen notification when a new page is published.';
+      if (testRow) testRow.hidden = false;
+    } else if (permission === 'denied') {
+      btn.classList.remove('is-active');
+      btn.disabled = false;
+      label.textContent = 'Notifications Blocked in Browser';
+      status.textContent = 'Notifications are blocked in your browser settings. Click the site settings / lock icon in your address bar to re-enable.';
+      if (testRow) testRow.hidden = true;
+    } else {
+      btn.classList.remove('is-active');
+      btn.disabled = false;
+      label.textContent = 'Enable device notifications';
+      status.textContent = 'Click to enable a discreet on-screen note when new entries are published.';
+      if (testRow) testRow.hidden = true;
+    }
+  }
+
+  btn?.addEventListener('click', async () => {
+    if (!isSupported) return;
+
+    if (Notification.permission === 'granted') {
+      // Already granted, trigger quick feedback
+      label.textContent = 'Already Active ✓';
+      setTimeout(() => updateUI(), 1500);
+      return;
+    }
+
+    if (Notification.permission === 'denied') {
+      status.textContent = 'Permission was previously blocked. Click the lock/tune icon next to the URL in your browser to allow notifications.';
+      return;
+    }
+
+    try {
+      label.textContent = 'Requesting permission…';
+      const permission = await Notification.requestPermission();
+      updateUI();
+      if (permission === 'granted') {
+        // Send a welcoming sample notification
+        const reg = await navigator.serviceWorker.ready;
+        reg.showNotification('In the margins', {
+          body: 'You’re now subscribed to quiet on-device notifications for new pages.',
+          icon: new URL('assets/favicon.svg', document.baseURI || location.href).href,
+          tag: 'margins-welcome'
+        });
+      }
+    } catch (err) {
+      console.error('Notification permission error:', err);
+      updateUI();
+    }
+  });
+
+  testBtn?.addEventListener('click', async () => {
+    if (Notification.permission !== 'granted') return;
+    try {
+      const reg = await navigator.serviceWorker.ready;
+      reg.showNotification('In the margins · Sample Entry', {
+        body: '“The Sentinel Running Out of Sky” — 6 min read in Space.',
+        icon: new URL('assets/favicon.svg', document.baseURI || location.href).href,
+        data: { url: './' }
+      });
+      testBtn.textContent = 'Test sent ✓';
+      setTimeout(() => { testBtn.textContent = 'Send test notification ↗'; }, 2500);
+    } catch (err) {
+      console.error('Failed to send test notification:', err);
+    }
+  });
+
+  disableBtn?.addEventListener('click', () => {
+    status.textContent = 'To disable, click the site settings / lock icon in your browser address bar and switch Notifications to "Block" or "Reset".';
+  });
+
+  updateUI();
+})();
+
+

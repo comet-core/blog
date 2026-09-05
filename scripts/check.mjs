@@ -56,6 +56,8 @@ for (const match of css.matchAll(/url\(['"]?([^)'"\s]+)['"]?\)/g)) {
 
 assert(existsSync(join(output, '.nojekyll')), 'Missing .nojekyll');
 assert(existsSync(join(output, '404.html')), 'Missing custom 404');
+assert(existsSync(join(output, 'manifest.json')), 'Missing manifest.json');
+assert(existsSync(join(output, 'sw.js')), 'Missing sw.js');
 const subscribe = readFileSync(join(output, 'subscribe/index.html'), 'utf8');
 assert(/href="https:\/\/[^\"]+"[^>]*>Continue to email signup/.test(subscribe), 'Subscription page must link to a secure hosted signup');
 const feedUrl = `${prefix}feed.xml`.replace('//', '/');
