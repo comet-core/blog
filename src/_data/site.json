@@ -14,7 +14,7 @@
   "notifications": {
     "enabled": true,
     "provider": "webpushr",
-    "webpushrKey": "",
+    "webpushrKey": "BBG9Qdr0llYgzVzP496nmll-O1paA31TuLbfHffV0ADYYlFGK4w-CFock0RiEsjsPKsMU3jICrhjE4nKSirfCGw",
     "prompt": "Quiet notifications when a new journal entry is published."
   },
   "showExamples": false

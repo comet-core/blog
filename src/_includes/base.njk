@@ -21,7 +21,7 @@
   <link rel="manifest" href="{{ '/manifest.json' | url }}">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="{{ '/assets/favicon.svg' | url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | url }}">
   <link rel="stylesheet" href="{{ '/assets/styles.css' | url }}?v={{ buildVersion }}">
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | url }}">
   <script src="{{ '/assets/journal.js' | url }}?v={{ buildVersion }}" defer></script>
@@ -45,5 +45,10 @@
       <div class="footer-links"><span>© {{ buildYear }} {{ site.author }}</span><a href="#top" data-back-top>Back to top <span aria-hidden="true">↑</span></a></div>
     </footer>
   </div>
+  {% if site.notifications.enabled and site.notifications.webpushrKey %}
+  <!-- start webpushr code -->
+  <script>(function(w,d, s, id) {if(typeof(w.webpushr)!=='undefined') return;w.webpushr=w.webpushr||function(){(w.webpushr.q=w.webpushr.q||[]).push(arguments)};var js, fjs = d.getElementsByTagName(s)[0];js = d.createElement(s); js.id = id;js.async=1;js.src = "https://cdn.webpushr.com/app.min.js";fjs.parentNode.insertBefore(js,fjs);}(window,document, 'script', 'webpushr-jssdk'));webpushr('setup',{'key':'{{ site.notifications.webpushrKey }}'});</script>
+  <!-- end webpushr code -->
+  {% endif %}
 </body>
 </html>

@@ -23,8 +23,8 @@ self.addEventListener('push', event => {
   const title = data.title || 'In the margins';
   const options = {
     body: data.body || 'A new page has been published in the journal.',
-    icon: data.icon || './assets/favicon.svg',
-    badge: data.badge || './assets/favicon.svg',
+    icon: data.icon || './assets/icon-192.png',
+    badge: data.badge || './assets/icon-192.png',
     tag: data.tag || 'margins-entry',
     renotify: true,
     data: {

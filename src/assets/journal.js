@@ -263,7 +263,7 @@ document.addEventListener('keydown', event => {
         const reg = await navigator.serviceWorker.ready;
         reg.showNotification('In the margins', {
           body: 'You’re now subscribed to quiet on-device notifications for new pages.',
-          icon: new URL('assets/favicon.svg', document.baseURI || location.href).href,
+          icon: new URL('assets/icon-192.png', document.baseURI || location.href).href,
           tag: 'margins-welcome'
         });
       }
@@ -279,7 +279,7 @@ document.addEventListener('keydown', event => {
       const reg = await navigator.serviceWorker.ready;
       reg.showNotification('In the margins · Sample Entry', {
         body: '“The Sentinel Running Out of Sky” — 6 min read in Space.',
-        icon: new URL('assets/favicon.svg', document.baseURI || location.href).href,
+        icon: new URL('assets/icon-192.png', document.baseURI || location.href).href,
         data: { url: './' }
       });
       testBtn.textContent = 'Test sent ✓';
